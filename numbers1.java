@@ -13,24 +13,8 @@ public static final int MAX_TRIES = 10;
 public static void main(String[] args)
 {
     
-	//USING JPANEL AND SWING CLASSES BELOW
-	/*
-	JFrame f = new JFrame(); //instance of JFrame
-	JButton b = new JButton("Add"); //instance of JButton
-	String title = new String("Math Tool");
-	b.setBounds(130,100,100,40); //set axes, w, and h
-	f.add(b); //add button to the JFrame
-	f.setSize(400,500); //set w then h
-	f.setLayout(null); //using no layout managers
-	f.setVisible(true); //making the frame visible
+		// USING SCANNER CLASESS BELOW
 	
-	//END OF JPANEL AND SWING CLASSES
-	*/
-	
-	
-	// USING SCANNER CLASESS BELOW
-	/*
-
         Random generator = new Random();
         Scanner input = new Scanner(System.in);
         String playAgain;
@@ -44,6 +28,23 @@ public static void main(String[] args)
             System.out.print("Play again? [Y/N]: ");
             playAgain = input.nextLine();
         } while ("Y".equalsIgnoreCase(playAgain));
+        
+        // END OF SCANNER CLASSES
+        	
+    //USING JPANEL AND SWING CLASSES BELOW
+	/*
+	JFrame f = new JFrame(); //instance of JFrame
+	JButton b = new JButton("Add"); //instance of JButton
+	String title = new String("Math Tool");
+	b.setBounds(130,100,100,40); //set axes, w, and h
+	f.add(b); //add button to the JFrame
+	f.setSize(400,500); //set w then h
+	f.setLayout(null); //using no layout managers
+	f.setVisible(true); //making the frame visible
+	
+	//END OF JPANEL AND SWING CLASSES
+	*/
+        	
     }
 
     public static boolean playGuessingGame(Scanner input, int answer) {
@@ -67,9 +68,6 @@ public static void main(String[] args)
             }
         } while (numTries < MAX_TRIES);
         return correct;
-	// END OF SCANNER CLASSES
-	*/
-	
 	
 }
 }
