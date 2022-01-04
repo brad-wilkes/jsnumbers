@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import guessMath;
 
 public class numbers1 {
 
@@ -14,7 +15,7 @@ public static void main(String[] args)
 {
     
 		// USING SCANNER CLASESS BELOW
-	
+		//guessMath game = new guessMath(); //Create instance of guessMath object
         Random generator = new Random();
         Scanner input = new Scanner(System.in);
         String playAgain;
