@@ -22,7 +22,7 @@ public static void main(String[] args)
         do {
             int answer = MIN_VALUE + generator.nextInt(MAX_VALUE);
             System.out.println(String.format("You have %d tries to guess a number between %d and %d", MAX_TRIES, MIN_VALUE, MAX_VALUE));
-            boolean correct = playGuessingGame(input, answer);
+            boolean correct = guessMath(input, answer);
             if (!correct) {
                 System.out.println(String.format("The number was %d", answer));
             }
@@ -48,7 +48,7 @@ public static void main(String[] args)
         	
     }
 
-    public static boolean playGuessingGame(Scanner input, int answer) {
+    public static boolean guessMath(Scanner input, int answer) {
         boolean correct = false;
         int numTries = 0;
         do {
