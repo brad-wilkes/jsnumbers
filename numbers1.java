@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.util.Random;
 import java.util.Scanner;
 
-import guessMath;
+//import guessMath.*;
 
 public class numbers1 {
 
